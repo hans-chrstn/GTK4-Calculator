@@ -1,12 +1,12 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkDerivation {
-  pname = "gtk_app";
+  pname = "gtk_calculator";
   version = "1.0";
 
   src = ./.;
 
-  nativeBuildInputs = with pkgs; [ gtkmm3 cmake pkg-config make gnumake gcc];
+  nativeBuildInputs = with pkgs; [ gtkmm4 cmake pkg-config make gnumake gcc];
 
   buildPhase = ''
     mkdir -p build

@@ -1,4 +1,4 @@
-project('nixos_build', 'cpp', 'c',
+project('calculator', 'cpp', 'c',
   version: '0.0.0',
   default_options: [
     'cpp_std=c++17'
@@ -7,7 +7,7 @@ project('nixos_build', 'cpp', 'c',
 
 gtkmm_dep = dependency('gtkmm-4.0')
 
-program_name = 'nixos_build'
+program_name = 'calculator'
 
 cpp_sources = [
   'src/main.cc',
