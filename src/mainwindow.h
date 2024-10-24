@@ -18,7 +18,7 @@ protected:
   Gtk::Entry m_top_box_entry;
   Gtk::Button m_bottom_box_numpad;
 
-  void on_numpad_clicked();
+  void on_numpad_clicked(int value);
 };
 
 #endif
