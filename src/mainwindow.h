@@ -1,10 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "gtkmm/button.h"
-#include <gtkmm/entry.h>
-#include <gtkmm/box.h>
-#include <gtkmm/window.h>
+#include "glibmm/ustring.h"
+#include <gtkmm.h>
 
 class MainWindow : public Gtk::Window
 {
@@ -15,8 +13,12 @@ protected:
   Gtk::Box m_main_box;
   Gtk::Box m_top_box;
   Gtk::Box m_bottom_box;
-  Gtk::Entry m_top_box_entry;
-  Gtk::Button m_bottom_box_numpad;
+  Gtk::Entry m_top_entry;
+
+  const Glib::ustring APPNAME, ENTRY_TEXT;
+  const int WIDTH;
+  const int HEIGHT;
+
 
   void on_numpad_clicked(int value);
 };
